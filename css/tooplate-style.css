@@ -320,7 +320,7 @@ b, strong {
 
 .timeline-wrapper {
   position: relative;
-  padding: 22px 0;
+  padding: 20px 0;
 }
 .timeline-wrapper:last-child:before {
   height: 0;
@@ -355,7 +355,7 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   max-width: 432px;
-  margin-left: 6em;
+  #margin-left: 6em;
 }
 .timeline-info small {
   color: #474559;
