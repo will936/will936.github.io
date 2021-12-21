@@ -32,7 +32,7 @@
         @media (prefers-color-scheme: dark) {
             /* defaults to dark theme */
             body { 
-                --text-color: #eee;
+                color: #eee;
                 background-color: rgb(37, 37, 37);
             }
             .alert {
@@ -48,7 +48,7 @@
         @media (prefers-color-scheme: light) {
         /* defaults to light theme */
             body { 
-                --text-color: #000;
+                color: #000;
                 background-color: rgb(228, 228, 228);
             }
             .alert {
@@ -70,12 +70,13 @@
         }
   </style>
 <body>
+
+    <script async src="https://w.appzi.io/w.js?token=6TCcJ"></script>
+
+
     <div style="max-width: 900px;" class="container">
-        <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://cdn.will.cymru/images/status-banner-dark.png">  
-            <source media="(prefers-color-scheme: light)" srcset="https://cdn.will.cymru/images/status-banner.png">
-            <img src="https://cdn.will.cymru/images/status-banner.png" border="0" class="img-responsive">
-        </picture>
+        
+        <h1 style="text-align:center; line-height: 120px;">Status</h1>
         <center><hr class="solid" style="width: 650px;"></center>
         <br style="height: 150px;">
     </div>
