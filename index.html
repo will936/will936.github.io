@@ -32,22 +32,32 @@
         @media (prefers-color-scheme: dark) {
             /* defaults to dark theme */
             body { 
-                --text-color: #eee;
+                color: #eee;
                 background-color: rgb(37, 37, 37);
             }
             .alert {
                 color: rgb(255, 255, 255);
+            }
+            hr {
+                color: #eee;
+                border-color: white;
+                background-color: white;
             }
         }
         
         @media (prefers-color-scheme: light) {
         /* defaults to light theme */
             body { 
-                --text-color: #000;
+                color: #000;
                 background-color: rgb(228, 228, 228);
             }
             .alert {
                 color: #000;
+            }
+            hr {
+                color: rgb(0, 0, 0);
+                border-color: black;
+                background-color: black;
             }
         }
 
@@ -60,39 +70,40 @@
         }
   </style>
 <body>
+
+    <script async src="https://w.appzi.io/w.js?token=6TCcJ"></script>
+
+
     <div style="max-width: 900px;" class="container">
-        <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://cdn.will.cymru/images/status-banner-dark.png">  
-            <source media="(prefers-color-scheme: light)" srcset="https://cdn.will.cymru/images/status-banner.png">
-            <img src="https://cdn.will.cymru/images/status-banner.png" border="0" class="img-responsive">
-        </picture>
+        
+        <h1 style="text-align:center; line-height: 120px;">Status</h1>
         <center><hr class="solid" style="width: 650px;"></center>
         <br style="height: 150px;">
     </div>
 
     <div style="max-width: 900px;" class="container">
-        <div style="color: white; background-color: #00b050;" class="alert" role="alert">
-            <b>All Systems Operational</b> <p style="float: right;">Updated a few seconds ago</p>
+        <div style="color: white; background-color: #b07200;" class="alert" role="alert">
+            <b>Most Systems Offline</b> <p style="float: right;">Updated a few seconds ago</p>
         </div>
 
         <br>
-        <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
-            <b>Main Site</b> <p style="float: right;">Operational</p>
+        <div style="background-color:rgba(255, 0, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
+            <b>Main Site</b> <p style="float: right;">Offline</p>
         </div>
-        <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
-            <b>Support</b> <p style="float: right;">Operational</p>
+        <div style="background-color:rgba(255, 0, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
+            <b>Support</b> <p style="float: right;">Offline</p>
         </div>
-        <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
-            <b>Files Access</b> <p style="float: right;">Operational</p>
+        <div style="background-color:rgba(255, 0, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
+            <b>Files Access</b> <p style="float: right;">Offline</p>
         </div>
-        <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
-            <b>Emby</b> <p style="float: right;">Operational</p>
+        <div style="background-color:rgba(255, 0, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
+            <b>Emby</b> <p style="float: right;">Offline</p>
         </div>
         <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
             <b>Email</b> <p style="float: right;">Operational</p>
         </div>
         <div style="background-color:rgba(94, 255, 0, 0.11);border-color: rgb(182, 182, 182);" class="alert" role="alert">
-            <b>Jukebox Discord Bot</b> <p style="float: right;">Operational</p>
+            <b>Jukebox Bot</b> <p style="float: right;">Operational</p>
         </div>
     </div>
 </body>
